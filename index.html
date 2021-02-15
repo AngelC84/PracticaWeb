@@ -5,23 +5,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <style>
-
-h1{ /*Atributo */ 
+ 
+h1,h2,h3{ /*Atributo */ 
     color :blue;
+    font-size: 50px;
 }
 .colorRojo{ /*Clase*/ 
     color:red;
 }
-#Hola2{
+#Hola2{ /*ID*/
     color:seagreen;
 }
 
+p.Estilo{
+    color:crimson;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.CLASESUCA{
+    background-color: tomato;
+    width: 300px;
+    color: turquoise;
+    border: 15px solid green;
+    padding:40px;
+    margin: 50px;
+    
+    /*
+    visibility : hidden; - para que el cudrado o lo que queramos no este visible 
+    block- estaran asi para que se puedan visualziar en lugar de hidden 
+    display: inline; -- tener cuidado ya que te puede desordenar 
+    */
+}
+/*
+p::before{
+    content: "ANTES <<";
+    color:cyan;
+}
+
+p::after {
+    content: "DESPUES >>";
+    color :darkkhaki;
+}
+
+li::before{
+    content:".";
+    color:greenyellow;
+}
+*/
+
+/*
+p::first-letter{
+color:hotpink;
+font-size: 80px;
+
+}
+
+div:hover{
+background-color: indigo;
+
+}
+
+a:link{
+    color:blueviolet;
+}
+a:visited{
+    color:chartreuse;
+
+}
+a:hover{
+background-color: indigo;
+
+}
+a:active{
+    color: chocolate;
+}
+p::after{
+    color: yellow;
+    content : "hola";
+}
+p{
+    color:violet !important;
+}
+p{
+    color:cornflowerblue;
+}
+
+*/
+/*
+ p * a{
+font-size: 30px;
+}
+*/
 </style>
 
 </head>
 <body>
-   <h1 class = "colorRojo"> Hola Mundo</h1>
+   <!--h1> Hola Mundo</h1>
+   <h2> CRACKISIMOOO</h2>
+   <h3> PROBANDO AnDo</h3>
    <p class = "colorRojo">parrafo pequeño </p>
-   <p id = "#Hola2">mundito <b>HELOU EVRI VARI</b></p>
+   <p id = "Hola2">mundito <b>HELOU EVRI VARI</b></p-->
+
+    <!-- 
+Un span puede estar dentro de un div 
+Un div no puede estr dentro de un p 
+
+Si ponemos p * a el hijo a y todos lo que lo tengan seran afectados 
+
+
+    -->
+    <!--p>mai linc : <span><a href= '#'> www.google.com </a></span></p>
+    <p>mai linc :<a href= '#'> www.google.com </a></p-->
+        
+   <!--h1 class = "Estilo"> PARRAFO 1</h1>
+   <p class = "Estilo"> PARRAFO 1</p>
+   <p class = "Estilo"> PARRAFO 2</p>
+   <p class = "Estilo"> PARRAFO 3</p>
+
+   <ul>
+       <li>Coffe</li>
+       <li>Tea</li>
+       <li>COCA-COLA</li>
+   </ul>
+<div>
+   <p>Welcome to the Testo North America website, home of the world leader in the design, development, and manufacture of portable test and measurement instrumentation and solutions.</p>
+   <br> 
+   <p>Welcome to the Testo North America website, home of the world leader in the design, development, and manufacture of portable test and measurement instrumentation and solutions.</p>
+   <br> 
+   <p>Welcome to the Testo North America website, home of the world leader in the design, development, and manufacture of portable test and measurement instrumentation and solutions.</p>
+</div-->
+
+<!--a href="#"> Este enlace cambiara por arte de magiaaa omaigooo</a>
+<br>
+<a href="#"> Este enlace cambiara por arte de magiaaa omaigooo</a>
+<br>
+<a href="#"> Este enlace cambiara por arte de magiaaa omaigooo</a>
+
+
+
+<p> Este enlace cambiara por arte de magiaaa omaigooo</p-->
+
+<div class="CLASESUCA">
+<h1> TITULO PADRE OMG </h1>
+<p> MUCHO TEXTO Y K  </p>
+
+</div>
+
+<div class="CLASESUCA">
+<h1> OTRO CUADRO DIOS MIO </h1>
+<p> Y LUEGO QUE?  </p>
+
+</div>
+
 </body>
 </html>
