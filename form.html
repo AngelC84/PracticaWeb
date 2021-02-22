@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+
+
+<form action= "#" method="POST" target = "_blank" enctype = "multipart/form-data">
+<fieldset><!-- Sirve para encerrar en una recuardro lo que necesites--> 
+<legend>Informacion Basica </legend>
+<p>Nombre Completo : <input type = "text" name = "nombrecompleto" placeholder ="nombre Completo" required/></p>
+<p> Fecha de nacimiento: <input type = "date" name = "fechanacimiento" value ="2021-02-18" required/></p>
+<p>
+Genero:
+<label><input type = "radio" name = "genero" value ="M"/> Masculino </label>
+<label><input type = "radio" name = "genero" value ="F" checked/> Femenino </label>
+</p>
+<p> Numero Telefonico : <input type= "tel" name="telefono"></p>
+<p> Correo : <input type= "email" name="correo"></p>
+</fieldset> <!-- Aqui termina el primer recuadro de informacion--> 
+
+<fieldset>
+<legend>Informacion adicional</legend>
+
+<p>
+    Intereses: 
+<p> <input type= "checkbox" name="Libros" />Libros</p>
+<p> <input type= "checkbox" name="Peliculas" />Peliculas</p>
+<p> <input type= "checkbox" name="Videojuegos" />Videojuegos</p>
+</p>
+<p> Color favorito: <input type= "color" name="colorfav" /></p>
+<p> Archivo <input type= "file" name="Archivo" /></p>
+</fieldset>
+
+<input type = "submit" value = "enviar datos"/>
+<input type = "reset" value = "Restaurar formulario"/>
+
+
+
+</body>
+</html>
